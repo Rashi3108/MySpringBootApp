@@ -37,7 +37,7 @@ pipeline {
         stage('Deploy'){
             steps{
                 sh '''
-                java -jar target/simple-hello-1.0.0.jar
+                java -jar target/simple-hello-rashi-1.0.0.jar
                 '''
             }
         }
