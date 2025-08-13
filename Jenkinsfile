@@ -37,7 +37,7 @@ pipeline {
         stage('Deploy'){
             steps{
                 sh '''
-                java -jar target/simple-hello-rashi-1.0.0.jar --server.port=9090
+                sh 'nohup java -jar target/simple-hello-rashi-1.0.0.jar --server.port=9090 > app.log 2>&1 &'
                 '''
             }
         }
