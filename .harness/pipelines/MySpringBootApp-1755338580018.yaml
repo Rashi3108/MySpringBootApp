@@ -20,10 +20,12 @@ pipeline:
           execution:
             steps:
               - step:
-                  identifier: echo
-                  name: echo
+                  identifier: Build_Maven
+                  name: Build with Maven
                   spec:
-                    command: echo hello world
+                    shell: Sh
+                    image: maven:3.9.6-eclipse-temurin-17
+                    command: mvn clean install package
                   timeout: ""
                   type: Run
           platform:
