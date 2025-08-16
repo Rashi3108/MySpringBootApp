@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Rashi3108_MySpringBootApp_1755321367369-push-trigger-input-set
+  identifier: Build_Rashi3108_MySpringBootApp_1755321367369pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_Rashi3108_MySpringBootApp_1755321367369
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
