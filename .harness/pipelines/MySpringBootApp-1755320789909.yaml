@@ -24,6 +24,7 @@ pipeline:
                   name: Build using mvn
                   spec:
                     shell: Sh
+                    image: maven:3.9.6-eclipse-temurin-17
                     command: mvn clean install
                   timeout: ""
                   type: Run
